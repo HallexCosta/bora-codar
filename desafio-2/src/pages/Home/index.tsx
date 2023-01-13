@@ -15,7 +15,6 @@ export function Home() {
           }}
           alt="Sofá"
         />
-
       </section>
 
       <section className="product-content">
