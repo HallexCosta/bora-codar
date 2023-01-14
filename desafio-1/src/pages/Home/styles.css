@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    'player1 player2'
+    'player1 player3';
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+  max-width: fit-content;
+  height: 100%;
+  margin: auto;
+
+  align-content: center;
+
+  gap: 32px;
+}
+
+.container .music-player {
+  width: fit-content;
+}
+
+/* Styling specified music players by id */
+.container .music-player.player1 {
+  grid-area: player1;
+
+  margin-left: auto;
+}
+
+.container .music-player.player2,
+.container .music-player.player3 {
+  margin-right: auto;
+}
+
+.container .music-player.player2 {
+  grid-area: player2;
+}
+
+.container .music-player.player3 {
+  grid-area: player3;
+}
