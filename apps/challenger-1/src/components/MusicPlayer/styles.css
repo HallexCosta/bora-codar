@@ -1,0 +1,94 @@
+.challenger-1-container section.music-player {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+
+  height: fit-content;
+
+  padding: 38px;
+  border-radius: 10px;
+
+  background: var(--bg-music-player);
+}
+
+.challenger-1-container section.music-player .content .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+
+  margin-top: 30px;
+}
+
+.challenger-1-container section.music-player .content .description h2 {
+  font-size: 24px;    
+}
+.challenger-1-container section.music-player .content .description p {
+  font-size: 19px;    
+  opacity: .6;
+}
+
+.challenger-1-container section.music-player .controls {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.challenger-1-container section.music-player .controls svg {
+  fill: var(--text-color);
+  cursor: pointer;
+}
+
+.challenger-1-container section.music-player .controls .fast-back-icon {
+  transform: rotate(180deg);
+}
+
+.challenger-1-container section.music-player .progress {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px 0;
+  width: 100%;
+}
+
+.challenger-1-container section.music-player .progress .bar {
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 10px;
+}
+
+.challenger-1-container section.music-player .progress .bar .move {
+  border-radius: 10px;
+  width: 90%;
+  height: 6px;
+  background: rgba(217, 217, 217, 0.8);
+}
+
+.challenger-1-container section.music-player .progress p.duration {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+.challenger-1-container section.music-player .progress p.duration span {
+  color: #c4c4ccaa;
+}
+
+/* Horizontal Music Player */
+.challenger-1-container section.music-player.horizontal {
+  align-items: center;
+  padding: 27px;
+}
+
+.challenger-1-container section.music-player.horizontal .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 28px;
+}
+
+.challenger-1-container section.music-player.horizontal .content .description {
+  margin-top: 0;
+}
+
+.challenger-1-container section.music-player.horizontal img {
+  width: 84px;
+  height: 84px;
+}
