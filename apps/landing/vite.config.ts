@@ -1,4 +1,5 @@
 import { defineConfig, UserConfigExport } from 'vite'
+import vitePathsConfig from 'vite-tsconfig-paths'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
@@ -55,7 +56,7 @@ export default defineConfig({
   server: {
     port: 5171
   },
-  plugins: [react()],
+  plugins: [react(), vitePathsConfig()],
   resolve: {
     alias: {
       '@landing': path.resolve(__dirname, 'src'),

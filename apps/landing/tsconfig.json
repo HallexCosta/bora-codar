@@ -18,8 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "@landing/*": ["./src/*"],
-      "@desafio-1/*": ["../desafio-1/src/*"],
-      "@desafio-2/*": ["../desafio-2/src/*"]
+      "@challenger-1/*": ["../challenger-1/src/*"],
+      "@challenger-2/*": ["../challenger-2/src/*"]
     }
   },
   "include": ["src"],
