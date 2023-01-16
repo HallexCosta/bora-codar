@@ -1,4 +1,4 @@
 [build]
-  base = "./apps/landing/"
+  base = "/apps/landing/"
   command = "npm run build"
-  publish = "./apps/landing/dist/"
+  publish = "/apps/landing/dist/"
