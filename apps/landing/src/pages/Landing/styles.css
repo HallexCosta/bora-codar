@@ -1,0 +1,104 @@
+main.landing-container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-areas: 
+    'challenger1 challenger2';
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main.landing-container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+main.landing-container section a.scale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s ease-out;
+
+  cursor: pointer;
+}
+
+main.landing-container section a.scale:hover {
+  gap: 2px 0;
+  transform: scale(1.1);
+  transition: all .2s ease;
+}
+
+main.landing-container section a.scale img {
+  width: 480px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+main.landing-container section.challenger-1 {
+  grid-area: challenger1;
+  background: var(--bg-challenger-1);
+  color: var(--text-color-challenger-1);
+}
+main.landing-container section.challenger-2 {
+  grid-area: challenger2;
+  background: var(--bg-challenger-2);
+  color: var(--text-color-challenger-2);
+}
+
+main.landing-container section.challenger-1 a.scale:visited,
+main.landing-container section.challenger-1:has(a:hover) h2 {
+  color: var(--text-color-challenger-1);
+}
+
+main.landing-container section.challenger-2 a.scale:visited,
+main.landing-container section.challenger-2:has(a:hover) h2 {
+  color: var(--text-color-challenger-2);
+}
+@media(max-width: 1080px) {
+  main.landing-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    overflow: auto;
+  }
+
+  main.landing-container section {
+    padding: 40px 0;
+  }
+  main.landing-container section a h2 {
+    margin-top: 22px;
+  }
+}
+
+@media(max-width: 500px) {
+  main.landing-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+  }
+
+  main.landing-container section.challenger-1 a h2 {
+    margin-top: 12px;
+  }
+
+  main.landing-container section.challenger-2 {
+    justify-content: stretch;
+  }
+
+
+  main.landing-container section a.scale img {
+    width: 280px;
+    height: 220px;
+  }
+}

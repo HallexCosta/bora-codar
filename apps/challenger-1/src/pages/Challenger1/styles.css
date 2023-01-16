@@ -1,0 +1,40 @@
+.challenger-1-container {
+  display: grid;
+  grid-template-areas: 
+    'player1 player2'
+    'player1 player3';
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+  max-width: fit-content;
+  height: 100%;
+  margin: auto;
+
+  align-content: center;
+
+  gap: 32px;
+}
+
+.challenger-1-container .music-player {
+  width: fit-content;
+}
+
+/* Styling specified music players by id */
+.challenger-1-container .music-player.player1 {
+  grid-area: player1;
+
+  margin-left: auto;
+}
+
+.challenger-1-container .music-player.player2,
+.challenger-1-container .music-player.player3 {
+  margin-right: auto;
+}
+
+.challenger-1-container .music-player.player2 {
+  grid-area: player2;
+}
+
+.challenger-1-container .music-player.player3 {
+  grid-area: player3;
+}

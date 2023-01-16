@@ -1,0 +1,13 @@
+main.challenger-2-container section.img-content button.button-change-image-to-gif-container svg,
+main.challenger-2-container section.img-content button.button-change-image-to-gif-container img {
+  position: absolute;
+  width: 33px;
+  height: 22px;
+
+  right: 60px;
+  top: 0; 
+
+  cursor: pointer;
+}
+
+

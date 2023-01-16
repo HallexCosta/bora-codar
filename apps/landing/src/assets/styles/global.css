@@ -1,0 +1,30 @@
+:root:has(.landing-container) {
+  --bg-challenger-1: #2A2141;
+  --text-color-challenger-1: #EDEDED;
+  --bg-challenger-2: #D9CDF7aa;
+  --text-color-challenger-2: #4F4F4F;
+}
+
+*, body, html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  
+  font-family: Inter, sans-serif;
+  overflow: hidden;
+}
+
+button, input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+

@@ -1,0 +1,42 @@
+:root:has(.challenger-1-container) {
+  --bg-color: #0F0D13;
+  --text-color: #E1E1E6;
+  --bg-music-player: #2A2141;
+
+  font-family: Roboto, sans-serif;
+  background: var(--bg-color);
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+
+  color: var(--text-color);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input, 
+button {
+  border: none;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
