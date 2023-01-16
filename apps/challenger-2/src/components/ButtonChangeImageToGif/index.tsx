@@ -22,11 +22,11 @@ export const ButtonChangeImageToGif = (props: Props) => {
 
   return (
     <>
-      <img 
+      <img
         src={isAnimated ? props.images.gif : props.images.static}
         alt="Sofá"
       />
-      <button 
+      <button
         onClick={handleChangeImageToGif}
         className="button-change-image-to-gif-container"
       >

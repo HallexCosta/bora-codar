@@ -1,0 +1,12 @@
+{
+  "name": "@bora-codar/prettier-config-custom",
+  "version": "0.0.0",
+  "description": "HallexCosta prettier configs",
+  "main": ".prettierrc.js",
+  "keywords": [],
+  "author": "HallexCosta",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

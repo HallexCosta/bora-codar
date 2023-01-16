@@ -20,7 +20,7 @@ interface Paths {
 //    this.applies = props.applies
 //  }
 //  decorate(paths: Paths) {
-//    
+//
 //  }
 //  foreverGetFirstPosition(paths: string[]) {
 //    return paths[0]
@@ -39,13 +39,13 @@ function resolveChallenger1Alias(paths: Paths) {
 
   const removeIndicatorFiles = (s: string) => s.replace('/*', '')
   const foreverGetFirstPosition = (paths: string[]) => paths.shift()
-  const mountAliasPath = (baseURL: string, pathsMap: string[]) => `${baseURL}/${removeIndicatorFiles(foreverGetFirstPosition(pathsMap))}`
+  const mountAliasPath = (baseURL: string, pathsMap: string[]) =>
+    `${baseURL}/${removeIndicatorFiles(foreverGetFirstPosition(pathsMap))}`
 
-  return Object.entries(paths)
-    .reduce((prev, [key, pathMap]) => {
-      prev[removeIndicatorFiles(key)] = mountAliasPath(baseURL, pathMap)
-      return prev
-    }, {})
+  return Object.entries(paths).reduce((prev, [key, pathMap]) => {
+    prev[removeIndicatorFiles(key)] = mountAliasPath(baseURL, pathMap)
+    return prev
+  }, {})
 }
 
 // const alias = resolveChallenger1Alias(tsconfig.compilerOptions.paths)
@@ -62,7 +62,6 @@ export default defineConfig({
       // ...alias,
       '@challenger-1': path.resolve(__dirname, '../challenger-1/src'),
       '@challenger-2': path.resolve(__dirname, '../challenger-2/src')
-    },
+    }
   }
 } as UserConfigExport)
-

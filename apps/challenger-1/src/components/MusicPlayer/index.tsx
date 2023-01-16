@@ -11,7 +11,7 @@ import './styles.css'
 type Props = AllHTMLAttributes<HTMLDivElement> & {
   playerId: number
   orientation?: 'horizontal' | 'vertical'
-  showProgessBar?: boolean;
+  showProgessBar?: boolean
 }
 
 export function MusicPlayer(props: Props) {
@@ -39,7 +39,7 @@ export function MusicPlayer(props: Props) {
 
         <div className="description">
           <h2>Acorda Devinho</h2>
-          <p>Banda Rocketseat</p> 
+          <p>Banda Rocketseat</p>
         </div>
       </div>
 
@@ -53,4 +53,3 @@ export function MusicPlayer(props: Props) {
     </section>
   )
 }
-
