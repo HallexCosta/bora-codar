@@ -7,6 +7,5 @@
   to = "/apps/challenger-1/dist"
 
 [[redirects]]
-  from = "/"
   from = "/challenger/2"
   to = "/apps/challenger-2/dist"
