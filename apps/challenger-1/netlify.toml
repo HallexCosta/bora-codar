@@ -1,5 +1,4 @@
 [build]
-  base = "/apps/challenger-1/"
+  base = "."
   command = "npm run build"
-  publish = "/apps/challenger-1/dist/"
-
+  publish = "./dist"
