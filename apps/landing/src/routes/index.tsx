@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { Landing } from '@landing//pages/Landing'
-import Desafio1 from '@bora-codar/challenger-1'
-import Desafio2 from '@bora-codar/challenger-2'
+import Challenger1 from '@bora-codar/challenger-1'
+import Challenger2 from '@bora-codar/challenger-2'
 
 export const router = createBrowserRouter([
   {
@@ -10,12 +10,12 @@ export const router = createBrowserRouter([
     element: <Landing />
   },
   {
-    path: '/desafio/1',
-    element: <Desafio1 />
+    path: '/challenger/1',
+    element: <Challenger1 />
   },
   {
-    path: '/desafio/2',
-    element: <Desafio2 />
+    path: '/challenger/2',
+    element: <Challenger2 />
   }
 ])
 

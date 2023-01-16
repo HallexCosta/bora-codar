@@ -9,14 +9,14 @@ export function Landing() {
   return (
     <main className="landing-container">
       <section className="challenger-1">
-        <Link to="/desafio/1" className="scale">
+        <Link to="/challenger/1" className="scale">
           <img src={Challenger1Image} alt="Desafio 1 Image" />
           <h2>Desafio 1</h2>
         </Link>
       </section>
 
       <section className="challenger-2">
-        <Link to="/desafio/2" className="scale">
+        <Link to="/challenger/2" className="scale">
           <img src={Challenger2Image} alt="Desafio 2 Image" />
           <h2>Desafio 2</h2>
         </Link>
