@@ -6,9 +6,9 @@ import path from 'path'
 // import {tsconfig} from '../challenger-1-app/tsconfig.json'
 // console.log(tsconfig)
 // SCOPO - AUTO CONFIGURE APP PATHS
-interface Paths {
-  [k: string]: string[]
-}
+//interface Paths {
+//  [k: string]: string[]
+//}
 //interface Path {
 //  resolve: (...rest: string[]) => void
 //}
@@ -35,19 +35,19 @@ interface Paths {
 //}
 //new PathMappingsDecorator().decorate(tsconfig.compilerOptions.paths)
 
-function resolveChallenger1Alias(paths: Paths) {
-  const baseURL = path.resolve(__dirname, '../challenger-1-app')
-
-  const removeIndicatorFiles = (s: string) => s.replace('/*', '')
-  const foreverGetFirstPosition = (paths: string[]) => paths.shift()
-  const mountAliasPath = (baseURL: string, pathsMap: string[]) =>
-    `${baseURL}/${removeIndicatorFiles(foreverGetFirstPosition(pathsMap))}`
-
-  return Object.entries(paths).reduce((prev, [key, pathMap]) => {
-    prev[removeIndicatorFiles(key)] = mountAliasPath(baseURL, pathMap)
-    return prev
-  }, {})
-}
+//function resolveChallenger1Alias(paths: Paths) {
+//  const baseURL = path.resolve(__dirname, '../challenger-1-app')
+//
+//  const removeIndicatorFiles = (s: string) => s.replace('/*', '')
+//  const foreverGetFirstPosition = (paths: string[]) => paths.shift()
+//  const mountAliasPath = (baseURL: string, pathsMap: string[]) =>
+//    `${baseURL}/${removeIndicatorFiles(foreverGetFirstPosition(pathsMap))}`
+//
+//  return Object.entries(paths).reduce((prev, [key, pathMap]) => {
+//    prev[removeIndicatorFiles(key)] = mountAliasPath(baseURL, pathMap)
+//    return prev
+//  }, {})
+//}
 
 // const alias = resolveChallenger1Alias(tsconfig.compilerOptions.paths)
 
