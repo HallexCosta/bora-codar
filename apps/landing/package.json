@@ -2,6 +2,7 @@
   "name": "landing",
   "private": true,
   "version": "0.0.0",
+  "main": "./src/App.tsx",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@bora-codar/challenger-1": "*",
-    "@bora-codar/challenger-2": "*",
-    "@bora-codar/paths-mapping": "*",
+    "@bora-codar/challenger-1": "^0.0.0",
+    "@bora-codar/challenger-2": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.2",

@@ -1,1 +1,1 @@
-export const resolve = () => console.log('resolving...')
+export const resolve = () => console.log('resolving....')
