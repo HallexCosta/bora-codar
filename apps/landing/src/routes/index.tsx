@@ -1,26 +1,30 @@
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
-import { Landing } from '@landing/pages/Landing'
-import Challenger1 from '@bora-codar/challenger-1'
-import Challenger2 from '@bora-codar/challenger-2'
+import { Landing } from '../pages/Landing'
+//import Challenger1 from '@bora-codar/challenger-1'
+//import Challenger2 from '@bora-codar/challenger-2'
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to="/landing" />
+    element: <div>Landing</div>
   },
-  {
-    path: '/landing',
-    element: <Landing />
-  },
-  {
-    path: '/challenger/1',
-    element: <Challenger1 />
-  },
-  {
-    path: '/challenger/2',
-    element: <Challenger2 />
-  }
+  //{
+  //  path: '/',
+  //  element: <Navigate to="/landing" />
+  //},
+  //{
+  //  path: '/landing',
+  //  element: <Landing />
+  //{
+  //  path: '/challenger/1',
+  //  element: <Challenger1 />
+  //},
+  //{
+  //},
+  //  path: '/challenger/2',
+  //  element: <Challenger2 />
+  //}
 ])
 
 export function Routes() {
