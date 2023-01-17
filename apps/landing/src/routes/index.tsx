@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
 import { Landing } from '@landing//pages/Landing'
 import Challenger1 from '@bora-codar/challenger-1'
@@ -7,6 +7,10 @@ import Challenger2 from '@bora-codar/challenger-2'
 export const router = createBrowserRouter([
   {
     path: '/',
+    element: <Navigate to="/landing" />
+  },
+  {
+    path: '/landing',
     element: <Landing />
   },
   {
